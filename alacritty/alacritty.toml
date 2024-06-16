@@ -1,20 +1,3 @@
-Skip to content
- 
-Search…
-All gists
-Back to GitHub
-@iuliandita
-iuliandita/alacritty.toml
-Last active 3 weeks ago • Report abuse
-Code
-Revisions
-2
-Stars
-9
-Clone this repository at &lt;script src=&quot;https://gist.github.com/iuliandita/a4c1dd0e25460af91ebeeef51e0ef7ec.js&quot;&gt;&lt;/script&gt;
-<script src="https://gist.github.com/iuliandita/a4c1dd0e25460af91ebeeef51e0ef7ec.js"></script>
-Alacritty TOML config file, with all defaults present (commented out), in the proper order. Color scheme is Catpuccin Mocha.
-alacritty.toml
 # alacritty.toml
 # commented lines are the defaults
 # man 5 alacritty (>0.13) for full config manual
@@ -226,23 +209,3 @@ bindings = [
 #print_events          = false
 #highlight_damage      = false
 #prefer_egl            = false
-@amrikmalhans
-amrikmalhans commented on Feb 25
-ty
-
-@Builtbyjb
-Comment
- 
-Leave a comment
- 
-Footer
-© 2024 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact
-Manage cookies
-Do not share my personal information
