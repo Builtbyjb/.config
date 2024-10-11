@@ -1,1 +1,5 @@
-require("ajibola")
+require("config.lazy")
+
+
+
+
