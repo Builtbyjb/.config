@@ -4,13 +4,16 @@ return {
     config = function()
         require('nightfox').setup({
             options = {
-                transparent = false,
+                transparent = true,
                 terminal_colors = true,
                 styles = {
-                    comments = "italic",
+                    comments = "italic, bold",
                     keywords = "italic",
                     types = "italic",
                     functions = "italic",
+                    conditionals = "italic",
+                    constants = "italic",
+                    variables = "italic",
                 }
             },
         })
