@@ -17,7 +17,6 @@ symbol = " "
 read_only = " "
 truncation_length = 10
 truncation_symbol ="../"
-style ="bold blue"
 
 [docker_context]
 symbol = " "
