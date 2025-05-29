@@ -28,7 +28,7 @@ vim.keymap.set("n", "<leader>la", "<C-w>h", {silent= true})
 
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>f", function()
-  vim.lsp.buf.format({tabsize=2})
+  vim.lsp.buf.format({tabSize = 2,  insertSpaces = true})
 end)
 
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
@@ -42,3 +42,9 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+-- Display error
+vim.keymap.set('n', '<leader>le', function()
+  vim.diagnostic.open_float({ border = "rounded", focusable = false })
+end, { silent = true, desc = "Show line diagnostics" })
+

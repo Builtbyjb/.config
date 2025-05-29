@@ -131,12 +131,21 @@ return {
         settings = {
           pylsp = {
             plugins = {
+              autopep8 = { enabled = false },
+              yapf = { enabled = false },
+              black = { enabled = false },
+              pyls_isort = { enabled = false },
               pycodestyle = {
-                ignore = { 'W293' },
                 maxLineLength = 100,
                 indentSize = 2,
-                shiftWidth = 2,
-              }
+              },
+              pyflakes = { enabled = true },
+              mccabe = { enabled = true },
+              jedi_completion = { enabled = true },
+              jedi_hover = { enabled = true },
+              jedi_references = { enabled = true },
+              jedi_signature_help = { enabled = true },
+              jedi_symbols = { enabled = true }
             }
           }
         },
