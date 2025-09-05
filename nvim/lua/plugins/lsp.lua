@@ -105,6 +105,12 @@ return {
         }
       })
 
+      lspconfig.jdtls.setup({
+        capabilities = capabilities,
+        filetypes = {"java"},
+        on_attach = on_attach,
+      })
+
       lspconfig.lua_ls.setup({
         capabilities = capabilities,
         settings = {
@@ -138,6 +144,7 @@ return {
               pycodestyle = {
                 maxLineLength = 100,
                 indentSize = 2,
+                ignore = {'E701', 'E401'},
               },
               pyflakes = { enabled = true },
               mccabe = { enabled = true },
