@@ -17,6 +17,7 @@ symbol = " "
 read_only = " "
 truncation_length = 10
 truncation_symbol ="../"
+style = "italic white"
 
 [docker_context]
 symbol = " "
@@ -29,7 +30,7 @@ symbol = " "
 
 [git_branch]
 symbol = " "
-style="bold purple"
+style="italic white"
 
 [golang]
 symbol = " "
@@ -55,9 +56,6 @@ symbol = " "
 [lua]
 symbol = " "
 
-[memory_usage]
-symbol = " "
-
 [meson]
 symbol = "喝 "
 
@@ -82,7 +80,6 @@ Emscripten = " "
 EndeavourOS = " "
 Fedora = " "
 FreeBSD = " "
-Garuda = "﯑ "
 Gentoo = " "
 HardenedBSD = "ﲊ "
 Illumos = " "
@@ -107,9 +104,6 @@ SUSE = " "
 Ubuntu = " "
 Unknown = " "
 Windows = " "
-
-[package]
-symbol = " "
 
 [python]
 symbol = " "
