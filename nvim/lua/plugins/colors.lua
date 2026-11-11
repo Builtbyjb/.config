@@ -1,24 +1,80 @@
 return {
-  "loctvl842/monokai-pro.nvim",
-  name = "monokai-pro",
-  priority = 1000,
-  config = function()
-    require("monokai-pro").setup({
-      transparent_background = false,
-      terminal_colors = true,
-      devicons = true, -- highlight the icons of `nvim-web-devicons`
-      styles = {
-        comment = { italic = true },
-        keyword = { italic = true },       -- any other keyword
-        type = { italic = true },          -- (preferred) int, long, char, etc
-        storageclass = { italic = true },  -- static, register, volatile, etc
-        structure = { italic = true },     -- struct, union, enum, etc
-        parameter = { italic = true },     -- parameter pass in function
-        annotation = { italic = true },
-        tag_attribute = { italic = true }, -- attribute of tag in reactjs
-      },
-      filter = "classic",                      -- classic | octagon | pro | machine | ristretto | spectrum
-    })
-    vim.cmd("colorscheme  monokai-pro")
-  end,
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    lazy = false,
+    config = function()
+        require('catppuccin').setup({
+            flavour = "auto",     -- latte, frappe, macchiato, mocha
+            background = {        -- :h background
+                light = "latte",
+                dark = "frappe",
+            },
+            transparent_background = true, -- disables setting the background color.
+            float = {
+                transparent = true, -- enable transparent floating windows
+                solid = false,      -- use solid styling for floating windows, see |winborder|
+            },
+            term_colors = false,    -- sets terminal colors (e.g. `g:terminal_color_0`)
+            dim_inactive = {
+                enabled = false,    -- dims the background color of inactive window
+                shade = "dark",
+                percentage = 0.15,  -- percentage of the shade to apply to the inactive window
+            },
+            no_italic = false,      -- Force no italic
+            no_bold = true,        -- Force no bold
+            no_underline = true,   -- Force no underline
+            styles = {              -- Handles the styles of general hi groups (see `:h highlight-args`):
+                comments = { "italic" }, -- Change the style of comments
+                conditionals = { "italic" },
+                loops = {},
+                functions = {},
+                keywords = {},
+                strings = {},
+                variables = {},
+                numbers = {},
+                booleans = {},
+                properties = {},
+                types = {},
+                operators = {},
+                -- miscs = {}, -- Uncomment to turn off hard-coded styles
+            },
+            lsp_styles = { -- Handles the style of specific lsp hl groups (see `:h lsp-highlight`).
+                virtual_text = {
+                    errors = { "italic" },
+                    hints = { "italic" },
+                    warnings = { "italic" },
+                    information = { "italic" },
+                    ok = { "italic" },
+                },
+                underlines = {
+                    errors = { "underline" },
+                    hints = { "underline" },
+                    warnings = { "underline" },
+                    information = { "underline" },
+                    ok = { "underline" },
+                },
+                inlay_hints = {
+                    background = true,
+                },
+            },
+            color_overrides = {},
+            custom_highlights = {},
+            auto_integrations = true,
+            integrations = {
+                cmp = true,
+                gitsigns = true,
+                nvimtree = true,
+                notify = false,
+                mini = {
+                    enabled = true,
+                    indentscope_color = "",
+                },
+                -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+            },
+
+        })
+
+        vim.cmd('colorscheme catppuccin')
+    end,
 }

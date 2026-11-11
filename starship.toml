@@ -17,7 +17,7 @@ symbol = " "
 read_only = " "
 truncation_length = 10
 truncation_symbol ="../"
-style = "italic white"
+style = "white"
 
 [docker_context]
 symbol = " "
@@ -30,7 +30,7 @@ symbol = " "
 
 [git_branch]
 symbol = " "
-style="italic white"
+style="italic blue"
 
 [golang]
 symbol = " "
