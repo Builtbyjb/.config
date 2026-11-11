@@ -1,0 +1,287 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "cli_default_open_behavior": "new_window",
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "buffer_line_height": "comfortable",
+  "icon_theme": "Colored Zed Icons Theme Dark",
+  "show_wrap_guides": true,
+  "disable_ai": false,
+  "auto_update": false,
+  "current_line_highlight": "none",
+  "seed_search_query_from_cursor": "never",
+  "minimap": {
+    "show": "never",
+  },
+  "edit_predictions": {
+    "provider": "zed",
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null,
+    },
+  },
+  "agent": {
+    "threads_sidebar": {
+      "position": "right",
+    },
+    "dock": "right",
+    "default_profile": "ask",
+    "default_model": {
+      "effort": "high",
+      "enable_thinking": true,
+      "provider": "opencode",
+      "model": "zen/claude-opus-5",
+    },
+  },
+  "ui_font_size": 14,
+  "buffer_font_size": 12,
+  "ui_font_features": {
+    "italics": true,
+  },
+  "buffer_font_features": {
+    "italics": true,
+    "liga": true,
+    "calt": true, // font ligatures
+  },
+  "project_panel": {
+    "dock": "left",
+    "starts_open": false,
+    "auto_fold_dirs": true,
+    "scrollbar": {
+      "show": "never",
+    },
+    "indent_guides": {
+      "show": "never",
+    },
+  },
+  "scrollbar": {
+    "show": "auto",
+  },
+  "gutter": {
+    "min_line_number_digits": 0,
+    "folds": false,
+    "runnables": false,
+  },
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Min Dark (Solid)",
+  },
+  "theme_overrides": {
+    "Min Dark (Solid)": {
+      "editor.line_number": "#8E979C",
+      "hint": "#8E979C",
+      "players": [
+        {
+          "cursor": "#8E979C",
+        },
+      ],
+      "syntax": {
+        "comment": {
+          "font_style": "italic",
+          "color": "#8E979C",
+        },
+        "keyword": {
+          "font_style": "italic",
+        },
+        "function": {
+          "font_style": "italic",
+        },
+        "attribute": {
+          "font_style": "italic",
+        },
+        "constant": {
+          "font_style": "italic",
+        },
+        "type": {
+          "font_style": "italic",
+        },
+        "comment.doc": {
+          "font_style": "italic",
+          "color": "#8E979C",
+        },
+        "hint": {
+          "color": "#8E979C",
+          "font_style": "italic",
+          "font_weight": null,
+        },
+      },
+    },
+    "VSCode Dark Polished": {
+      "hint": "#8E979C",
+      "players": [
+        {
+          "cursor": "#8E979C",
+        },
+      ],
+      "syntax": {
+        "comment": {
+          "font_style": "italic",
+        },
+        "keyword": {
+          "font_style": "italic",
+        },
+        "function": {
+          "font_style": "italic",
+        },
+        "attribute": {
+          "font_style": "italic",
+        },
+        "constant": {
+          "font_style": "italic",
+        },
+        "type": {
+          "font_style": "italic",
+        },
+        "comment.doc": {
+          "font_style": "italic",
+        },
+        "hint": {
+          "font_style": "italic",
+          "font_weight": null,
+        },
+      },
+    },
+  },
+  "tabs": { "file_icons": true },
+  "vim_mode": true,
+  "cursor_shape": "block",
+  "cursor_blink": false,
+  "relative_line_numbers": "enabled",
+  "ui_font_family": null,
+  "buffer_font_family": "FiraCode Nerd Font Propo",
+  "lsp": {
+    "vscode-css-language-server": {
+      "settings": {
+        "css": {
+          "lint": {
+            "unknownAtRules": "ignore",
+          },
+        },
+      },
+    },
+    "codebook": {
+      "initialization_options": {
+        "configPath": ".zed/codebook.toml",
+      },
+    },
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
+  },
+  "languages": {
+    "Markdown": {
+      "show_edit_predictions": true,
+    },
+    "C": {
+      "show_edit_predictions": false,
+      "tab_size": 4,
+      "preferred_line_length": 100,
+      "wrap_guides": [100],
+    },
+    "Zig": {
+      "show_edit_predictions": false,
+    },
+    "Go": {
+      "show_edit_predictions": false,
+      "tab_size": 4,
+      "formatter": "language_server",
+      "format_on_save": "on",
+      "preferred_line_length": 100,
+      "wrap_guides": [100],
+    },
+    "Rust": {
+      "show_edit_predictions": true,
+      "tab_size": 4,
+      "formatter": "language_server",
+      "format_on_save": "on",
+      "preferred_line_length": 100,
+      "wrap_guides": [100],
+    },
+    "HTML": {
+      "tab_size": 2,
+      "formatter": "prettier",
+      "format_on_save": "on",
+      "preferred_line_length": 150,
+    },
+    "Python": {
+      "language_servers": ["ty"],
+      "tab_size": 4,
+      "formatter": "language_server",
+      "preferred_line_length": 100,
+      "wrap_guides": [100],
+    },
+    "Java": {
+      "show_edit_predictions": true,
+      "preferred_line_length": 150,
+      "formatter": "none",
+      "wrap_guides": [150],
+    },
+    "JavaScript": {
+      "format_on_save": "on",
+      "formatter": "prettier",
+      "tab_size": 4,
+      "preferred_line_length": 100,
+      "wrap_guides": [100],
+    },
+    "TypeScript": {
+      "format_on_save": "on",
+      "show_edit_predictions": true,
+      "formatter": "language_server",
+      "tab_size": 4,
+      "preferred_line_length": 100,
+      "wrap_guides": [100],
+    },
+    "Astro": {
+      "preferred_line_length": 120,
+      "wrap_guides": [120],
+    },
+    "TSX": {
+      "formatter": "language_server",
+      "format_on_save": "on",
+      "tab_size": 2,
+      "show_edit_predictions": true,
+      "preferred_line_length": 120,
+      "wrap_guides": [120],
+    },
+    "JSON": {
+      "format_on_save": "on",
+      "tab_size": 2,
+      "formatter": "prettier",
+    },
+    "JSONC": {
+      "format_on_save": "on",
+      "tab_size": 2,
+      "formatter": "prettier",
+    },
+  },
+  "extend_comment_on_newline": false,
+  "close_on_file_delete": true,
+}
