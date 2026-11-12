@@ -38,23 +38,18 @@ return {
                 vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
             end
 
-            vim.lsp.config("eslint",{
-                cmd = { "vscode-eslint-language-server", "--stdio" },
+
+            vim.lsp.enable("oxlint")
+            vim.lsp.config("oxlint", {
+                cmd = { "oxlint", "--lsp" },
                 capabilities = capabilities,
-                on_attach = function(client, bufnr)
-                    vim.api.nvim_create_autocmd("BufWritePre", {
-                        buffer = bufnr,
-                        command = "EslintFixAll",
-                    })
-                end,
                 filetypes = {
                     "javascript",
                     "javascriptreact",
-                    "javascript.jsx",
                     "typescript",
                     "typescriptreact",
-                    "typescript.tsx",
-                    "vue", "svelte",
+                    "vue",
+                    "svelte",
                     "astro"
                 },
             })
